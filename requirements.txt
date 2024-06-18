@@ -4,5 +4,5 @@ pandas
 scikit-learn
 scipy
 streamlit
-
-
+mysql-connector-python
+mysql
