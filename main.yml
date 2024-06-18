@@ -1,0 +1,21 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pkg-config
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run tests
+      run: |
+        python -m pytest tests/
