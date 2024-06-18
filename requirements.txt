@@ -1,14 +1,9 @@
-﻿
+package_name==0.55.1﻿
 matplotlib
 numpy
 pandas
-pillow
-requests
 scikit-learn
 scipy
-six
-smmap
 streamlit
-urllib3
-pickle
+
 
